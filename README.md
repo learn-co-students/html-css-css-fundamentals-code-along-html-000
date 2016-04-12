@@ -2,7 +2,7 @@
 
 ## Objectives
 
-1. Review linkin an external CSS file.
+1. Review linking an external CSS file.
 2. Review writing selectors.
 3. Styling text content.
 
