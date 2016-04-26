@@ -1,4 +1,4 @@
-# Code Along Exercise 3
+# CSS Fundamentals Code Along
 
 ## Objectives
 
@@ -8,20 +8,19 @@
 
 ## Introduction
 
-In this code along exercise we will be adding style to our pages by linking an external CSS file.
+Building upon previous code alongs, in this exercise you will add an external stylesheet and stylize page elements by coding along with the video provided. This will help you to review the concepts you were introduced to in the previous lessons.
 
-## Steps
+## Instructions
 
 1. Fork this repository.
-2. Clone your fork.
-3. cd into the folder for this lab.
-4. Code along with the included video below.
+2. Use Terminal to clone your forked copy.
+3. Then change directory into the repository folder.
+4. Code along with the provided video below and/or its supplementary reading located below the video. Code everything you see there. Feel free to stop, pause, rewind or fast forward through the content to keep pace.
 
 <iframe width="100%" height="720" src="//www.youtube.com/embed/aA8k-hK8qzg?rel=0&amp;controls=1&amp;showinfo=1" frameborder="0" allowfullscreen></iframe></iframe>
 
-5. Please <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">install Firefox</a> if you haven't already as it is required for the screenshot tests to run. 
-6. type the `learn` command in Terminal to run local test builds.
-7. Stage, commit, and push up your changes.
-8. Make a pull request.
+### CSS the Decorator to Your Otherwise Bland HTML Pages
+
+...
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/fe-code-along-3' title='Overview'>Overview</a> on Learn.co and start learning to code for free.</p>
