@@ -324,7 +324,9 @@ Pseudo selectors allow us to elect elements based off of their state (in the cas
 }
 ```
 
-...
+Here we are combining a descendant selector with a pseudo selector the first part `#details ` details witha space tells the browser to only select `a` links inside of the matching element with the id of `details`. The the `:` colon symbol followed by `link` creates a pseudo selector that will style the links in their default state. Here we set the color to black, and its `text-decoration` to `none` so there will no longer be any underline.
+
+Let's apply the exact same styles to the visited state (links we have previously clicked) by using a `,` comma to create a compund selector thats selected both at the same time.
 
 ```css
 #details a:link, #details a:visited {
@@ -333,7 +335,7 @@ Pseudo selectors allow us to elect elements based off of their state (in the cas
 }
 ```
 
-...
+This way visited links will look the same as default links when we see them for the first time. Next we will add styles for hover and active states.
 
 ```css
 #details a:link, #details a:visited {
@@ -350,8 +352,6 @@ Pseudo selectors allow us to elect elements based off of their state (in the cas
   color: red;
 }
 ```
-
-...
 
 Now save this file and head back to the browser and refresh to see the changes. By hoving over the links in the btoom of the page (in the details section) we see the links are black and when we hover they become underlined. If we click and hold the mouse button down we see their active state which colors the text red.
 
