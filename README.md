@@ -222,6 +222,143 @@ figcaption {
 
 #### Class Selector
 
+Where as the type selector only adds styles to one type of element, class selctors allow you to add styles to as many different kinds of elements as you like. We do this by adding a matching class name on HTML elements using the `class` attribute. For example let's say on certain elements we want to add special white text. I'm going to first create a class name that best describes the style itself.
+
+```css
+.milk-text {
+
+}
+```
+
+The class name is a personal choice. Try to make the name something that others will understand and that you yourself will remember at a later date. Also note that, the classname always starts with a `.` dot (period). Let's give milk-text some font styling:
+
+```css
+.milk-text {
+  font: bold 2.6em 'Elsie Swash Caps', cursive;
+  color: white;
+  text-shadow: 0 2px 3px #000;
+}
+```
+
+Let's apply this class to an element in our real-estate-listings.html page. Open real-estate-listings.html in your code editor. In the `<h2>Featured Listings</h2>` (mine was is on line 37) heading inside the opening `<h2>` tag we can apply our class by adding the `class` attribute and setting its value to our class name `milk-text`.
+
+```html
+<h2 class="milk-text">Featured Listings</h2>
+```
+
+Save this page and open it in the browser and you should see the header has the new styles applied.
+
+#### ID Selector
+
+ID selectors can be applied to one unique element per page. Unlike class that can be applied to many different elements across a page there can only be one element per HTML page with a unique ID.
+
+Let's head to our index.html page in our code editor and create a generic box using a `<div>` element to surround our `<h1>` and `<h2>`. This box will eventually be our logo for the page so we're going to give the `<div>` a unique id of logo.
+
+```html
 ...
+<body>
+  <header>
+    <div id="logo">
+      <h1>Exceptional</h1>
+      <h2>Realty Group</h2>
+    </div>
+    ...
+```
+
+On line 4 in the snippet above we can see we used the `id` attribute and set its value to our unique id name `logo`. Just the same as for class we can make up any name we like for an id. Again, there should onky be one id of logo per page and there should be more than one id of logo on more than one element in a single page... Next,head back to style.css in your code editor.
+
+Let's write a selector called `#logo`.
+
+```css
+#logo {
+
+}
+```
+
+Just in the same way we use a `.` dot to indicate a class an id is defined starting iwth a `#` hashtag (pound) symbol. We will set the background color of the element using the `background` property.
+
+```css
+#logo {
+  background: aqua;
+}
+```
+
+Now save and refresh the page in the browser to see the qua background appear on our div with the id of logo.
+
+#### Descendant Selector
+
+Occasionally you might have a need to select and style only certain elements if they appear as children inside of another parent element. For example let's say we want to style the `<h1>` and `<h2>` inside of the `<div id="logo">...</div>`. To calrify we do not wish to style all `<h1>` and `<h2>` we only wish to style them if they happen to appear inside of our uniquely assigned div with an id of `logo`.
+
+```css
+#logo h1 {
+  
+}
+
+#logo h2 {
+
+}
+```
+
+The ` ` space between `#logo` and `h1` or `h2` tells the browser that we are going wihtin the first selector in the statement and selecting the next selector after the space. Let's apply our google fonts to each heading.
+
+```css
+#logo h1 {
+  font-family: 'Clicker Script', cursive;
+}
+
+#logo h2 {
+  font-family: 'Elsie Swash Caps', cursive;
+}
+```
+
+Save the css file and return to the browser and refresh teh page to see the change.
+
+#### Pseudo Selector
+
+Pseudo selectors allow us to elect elements based off of their state (in the case of links: hover, click, previously clicked) and their releationship with other elements (such as selecting the last child among a common parent). Looking at links, let's say we would like to select the links at the bootom of our pages in the details section and style their different link states.
+
+```css
+#details a:link {
+  color: black;
+  text-decoration: none;
+}
+```
+
+...
+
+```css
+#details a:link, #details a:visited {
+  color: black;
+  text-decoration: none;
+}
+```
+
+...
+
+```css
+#details a:link, #details a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+#details a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+#details a:active {
+  color: red;
+}
+```
+
+...
+
+Now save this file and head back to the browser and refresh to see the changes. By hoving over the links in the btoom of the page (in the details section) we see the links are black and when we hover they become underlined. If we click and hold the mouse button down we see their active state which colors the text red.
+
+It's now time to version our changes using Git. To do so, in Terminal type `git add .` and press return. Then type `git commit -m "add css style to all pages"` and press return. Then push up this feature branch `git push -u origin site-style` and press return. Next merge the changes into your master branch. Type `git checkout master` and press return, then `git merge site-style` and press return. Then `git push origin master` and press return.
+
+After you finish, make sure you install Firefox if you haven't already as it is required for the screenshot tests to run. Then, type learn command from Terminal to run local tests (Mac) or type learn-test for Windows.
+
+After all tests are passing submit a pull request on Github and move on to the next lesson!
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/fe-code-along-3' title='Overview'>Overview</a> on Learn.co and start learning to code for free.</p>
