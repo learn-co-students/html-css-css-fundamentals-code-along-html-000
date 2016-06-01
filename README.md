@@ -21,13 +21,13 @@ Building upon previous code alongs, in this exercise you will add an external st
 
 ### CSS the Decorator to Your Otherwise Bland HTML Pages
 
-Lets start out by making a new feature branch in Terminal by typing `git checkout -b site-style` and press return. 
+Lets start out by making a new feature branch in Terminal by typing `git checkout -b site-style` and press return.
 
 #### Creating and Linking An External Stylesheet
 
 Next, let's create a folder for our CSS to live in. In Terminal type `mkdir css` and press return. Then let's create a new stylesheet in this folder by typing `touch css/style.css` and press return. Then bring up the index.html page in your code editor.
 
-Inside the `<head>` element at the top of our page let's create a `<link>` element to connect our CSS stylesheet with our HTML index page. 
+Inside the `<head>` element at the top of our page let's create a `<link>` element to connect our CSS stylesheet with our HTML index page.
 
 ```html
 <!DOCTYPE html>
@@ -89,11 +89,11 @@ Next, open up your style.css file in your code editor. Let's start by writing a 
 
 ```css
 /* This
-is 
+is
 a comment */
 ```
 
-So remember from our previous lesson we can see that CSS comments start with a `/*` and end with a `*/`. These comments can be single or or across multiple lines like the example above. 
+So remember from our previous lesson we can see that CSS comments start with a `/*` and end with a `*/`. These comments can be single or or across multiple lines like the example above.
 
 #### Syntax
 
@@ -117,7 +117,7 @@ CSS is made up of a **selector** statement that selects elements within our HTML
 Suppose you wanted to select all paragraphs in your HTML page. We can do so using a type selector thaht will select all elements with the matching type (element name).
 
 ```css
-p { 
+p {
   font-size: 16px;
 }
 ```
@@ -127,7 +127,7 @@ By simply giving the element name `p` as the selector it will select all `<p>` e
 Pixels will size type consistently across different browsers. Point size varies from browser to browser and is not reccomended for szing type. Percents are an adjustable amount and depends on the sizing of other parent elements. Ems are also an adjustable amount that is dependent upon parent elements sizing. Ems in most browsers have the following realtionship to pixels where 1 em = 16px. In responsive website design which we will discuss in a later lesson, we will see that there are some key advantages to sizing your typography using ems. To convert pixels to ems you just need to divide by 16. So 16px / 16 = 1em. Let's update this in our code
 
 ```css
-p { 
+p {
   font-size: 1em;
 }
 ```
@@ -135,9 +135,9 @@ p {
 Next let's add a line height. This is the sapcing between lines of text in the paragraph.
 
 ```css
-p { 
+p {
   font-size: 1em;
-  line-height: 1.5em; 
+  line-height: 1.5em;
 }
 ```
 
@@ -184,9 +184,9 @@ On line 6 of the code snippet above we set the color of our text using the `colo
 
 #### Web Fonts
 
-So far we have used the `font-family` property to set the font on our text asuuming the user has the font file for that particular font on their computer. One way to insure that we can use a specialized font that users may not have on their system is to load a web font. Using this strategy involves providing the font as part of the files in your website and telling the browser to load the font for use in the webpages. An easy way to include web fonts is to link to them from other websites. In this example we will use Google Fonts which provides links to access their free font library. 
+So far we have used the `font-family` property to set the font on our text asuuming the user has the font file for that particular font on their computer. One way to insure that we can use a specialized font that users may not have on their system is to load a web font. Using this strategy involves providing the font as part of the files in your website and telling the browser to load the font for use in the webpages. An easy way to include web fonts is to link to them from other websites. In this example we will use Google Fonts which provides links to access their free font library.
 
-Start by heading over to [http://google.com/fonts](http://google.com/fonts) in your browser. Then, in the search bar on this page search for `Elsie`. From the returned search results under "Elsie Swash Caps" next to the Add to Collection button there are three icons. Click the center icon "quick-use". 
+Start by heading over to [http://google.com/fonts](http://google.com/fonts) in your browser. Then, in the search bar on this page search for `Elsie`. From the returned search results under "Elsie Swash Caps" next to the Add to Collection button there are three icons. Click the center icon "quick-use".
 
 Under the box that says "1. Choose the styles you want", check the boxes for both Normal 400, and Ultra Bold 900.
 
@@ -291,7 +291,7 @@ Occasionally you might have a need to select and style only certain elements if 
 
 ```css
 #logo h1 {
-  
+
 }
 
 #logo h2 {
@@ -357,8 +357,6 @@ Now save this file and head back to the browser and refresh to see the changes. 
 
 It's now time to version our changes using Git. To do so, in Terminal type `git add .` and press return. Then type `git commit -m "add css style to all pages"` and press return. Then push up this feature branch `git push -u origin site-style` and press return. Next merge the changes into your master branch. Type `git checkout master` and press return, then `git merge site-style` and press return. Then `git push origin master` and press return.
 
-After you finish, make sure you install Firefox if you haven't already as it is required for the screenshot tests to run. Then, type learn command from Terminal to run local tests (Mac) or type learn-test for Windows.
-
-After all tests are passing submit a pull request on Github and move on to the next lesson!
+Congrats! You did it!
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/fe-code-along-3' title='Overview'>Overview</a> on Learn.co and start learning to code for free.</p>
