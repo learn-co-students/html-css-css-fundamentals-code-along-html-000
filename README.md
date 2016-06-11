@@ -265,7 +265,7 @@ Let's head to our index.html page in our code editor and create a generic box us
     ...
 ```
 
-On line 4 in the snippet above we can see we used the `id` attribute and set its value to our unique id name `logo`. Just the same as for class we can make up any name we like for an id. Again, there should onky be one id of logo per page and there should be more than one id of logo on more than one element in a single page... Next,head back to style.css in your code editor.
+On line 4 in the snippet above we can see we used the `id` attribute and set its value to our unique id name `logo`. Just the same as for class we can make up any name we like for an id. Again, there should only be one id of logo per page and there should be more than one id of logo on more than one element in a single page... Next,head back to style.css in your code editor.
 
 Let's write a selector called `#logo`.
 
@@ -283,7 +283,7 @@ Just in the same way we use a `.` dot to indicate a class an id is defined start
 }
 ```
 
-Now save and refresh the page in the browser to see the qua background appear on our div with the id of logo.
+Now save and refresh the page in the browser to see the aqua background appear on our div with the id of logo.
 
 #### Descendant Selector
 
@@ -311,11 +311,11 @@ The ` ` space between `#logo` and `h1` or `h2` tells the browser that we are goi
 }
 ```
 
-Save the css file and return to the browser and refresh teh page to see the change.
+Save the css file and return to the browser and refresh the page to see the change.
 
 #### Pseudo Selector
 
-Pseudo selectors allow us to elect elements based off of their state (in the case of links: hover, click, previously clicked) and their releationship with other elements (such as selecting the last child among a common parent). Looking at links, let's say we would like to select the links at the bootom of our pages in the details section and style their different link states.
+Pseudo selectors allow us to select elements based off of their state (in the case of links: hover, click, previously clicked) and their relationship with other elements (such as selecting the last child among a common parent). Looking at links, let's say we would like to select the links at the bottom of our pages in the details section and style their different link states.
 
 ```css
 #details a:link {
@@ -353,10 +353,12 @@ This way visited links will look the same as default links when we see them for 
 }
 ```
 
-Now save this file and head back to the browser and refresh to see the changes. By hoving over the links in the btoom of the page (in the details section) we see the links are black and when we hover they become underlined. If we click and hold the mouse button down we see their active state which colors the text red.
+Now save this file and head back to the browser and refresh to see the changes. By hoving over the links in the bottom of the page (in the details section) we see the links are black and when we hover they become underlined. If we click and hold the mouse button down we see their active state which colors the text red.
 
 It's now time to version our changes using Git. To do so, in Terminal type `git add .` and press return. Then type `git commit -m "add css style to all pages"` and press return. Then push up this feature branch `git push -u origin site-style` and press return. Next merge the changes into your master branch. Type `git checkout master` and press return, then `git merge site-style` and press return. Then `git push origin master` and press return.
 
 Congrats! You did it!
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/fe-code-along-3' title='Overview'>Overview</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/html-css-css-fundamentals-code-along'>CSS Fundamentals Code-Along</a> on Learn.co and start learning to code for free.</p>
