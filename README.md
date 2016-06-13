@@ -132,7 +132,7 @@ p {
 }
 ```
 
-Next let's add a line height. This is the sapcing between lines of text in the paragraph.
+Next let's add a line height. This is the spacing between lines of text in the paragraph.
 
 ```css
 p {
@@ -287,7 +287,7 @@ Now save and refresh the page in the browser to see the aqua background appear o
 
 #### Descendant Selector
 
-Occasionally you might have a need to select and style only certain elements if they appear as children inside of another parent element. For example let's say we want to style the `<h1>` and `<h2>` inside of the `<div id="logo">...</div>`. To calrify we do not wish to style all `<h1>` and `<h2>` we only wish to style them if they happen to appear inside of our uniquely assigned div with an id of `logo`.
+Occasionally you might have a need to select and style only certain elements if they appear as children inside of another parent element. For example let's say we want to style the `<h1>` and `<h2>` inside of the `<div id="logo">...</div>`. To clarify we do not wish to style all `<h1>` and `<h2>` we only wish to style them if they happen to appear inside of our uniquely assigned div with an id of `logo`.
 
 ```css
 #logo h1 {
