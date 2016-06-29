@@ -1,4 +1,4 @@
-# CSS Fundamentals Code Along
+git checkout master# CSS Fundamentals Code Along
 
 ## Objectives
 
