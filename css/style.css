@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900);
+@import url(https://fonts.googleapis.com/css?family=Clicker+Script);
+/* This is a comment! */
+
+/* CSS Syntax:
+selector {property: value;
+property: value;
+property: value;}
+*/
+
+/* Type selector */
+
+p { /* select all <p>*/
+  font-size: 16px; /* 16px, ?pt (points are not all the same from program to program so use sparingly),
+   100%, 1em (usually 16 pixels, so 16px = 1em) */
+   line-height: 1.5em;
+}
+
+figcaption {
+  font-weight: normal;
+  font-size: 0.7em;
+  line-height: 1.5em;
+  font-family: Georgia, "New Times Roman", serif;
+  font: normal 0.75em/1.5em 'Elsie Swash Caps', cursive;
+  color: #777; /* Available colors are red, green, and blue.  6 double-digit alphanumeric code states the
+  intensity of the colors. Triple digits means redundancy, ex. 87D=8877DD.  rbga values range from 0 to 255.
+  Ex. color: rgba (255, 0, 0, 1) means 255 red, 0 green, 0 blue, 100% opacity.  Digital Color Meter is
+  available through search in toolbar.  "Display Native Values" will give color values of whatever
+  mouse is touching.  Command+Shift+C will copy numbers.*/
+  text-align: right
+}
+
+/* Class selector (applied to as many elements as you like, as opposed to Type Selector which is only
+for one element) */
+
+.milk-text { /* selects elements with a class="milk-text" */
+font: bold 2.6em 'Elsie Swash Caps', cursive;
+color: white;
+text-shadow: 0 2px 3px #000;
+}
+
+/* ID selector (applies to one unique element per page) */
+#logo { /* selects elements with id="logo" */
+background: aqua;
+}
+
+/* Descendent Selector */
+
+#logo h1 { /* selects <h1> if they're inside the id="logo" */
+font-family: 'Clicker Script', cursive;
+
+}
+
+#logo h2 {
+  font-family: 'Elsie Swash Caps', cursive;
+}
+
+
+/* Pseudo Class Selector */
+
+#details a:link, #details a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+#details a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+#details a:active {
+  color: red;
+  text-decoration: none;
+}
