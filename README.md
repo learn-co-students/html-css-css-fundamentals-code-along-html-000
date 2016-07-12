@@ -46,7 +46,7 @@ On line 6 we used the `<link>` element and set its `rel` attribute to `styleshee
 
 Let's put CSS on pause for a sec, since we coding in the `<head>` section let's take a moment to add some more support for older browsers that will insure they can handle both HTML5 and CSS3 commands we might use for these site pages.
 
-We will start by adding a link to Normalize first. This will give us a base CSS style for all of our pages. This is important as different browsers have different base styles, so one browser may use one font by default another may use a different one. Linking to Normalize will insure we have the same CSS look and feel in all browsers. You can add the following link into the head section just above our CSS link. By linking to normalize first and then our CSS style second it allows us to override the Normlaize base styles with our own style.
+We will start by adding a link to Normalize first. This will give us a base CSS style for all of our pages. This is important as different browsers have different base styles, so one browser may use one font by default another may use a different one. Linking to Normalize will ensure we have the same CSS look and feel in all browsers. You can add the following link into the head section just above our CSS link. By linking to normalize first and then our CSS style second it allows us to override the Normalize base styles with our own style.
 
 ```html
 <!DOCTYPE html>
@@ -114,7 +114,7 @@ CSS is made up of a **selector** statement that selects elements within our HTML
 
 #### Type Selector
 
-Suppose you wanted to select all paragraphs in your HTML page. We can do so using a type selector thaht will select all elements with the matching type (element name).
+Suppose you wanted to select all paragraphs in your HTML page. We can do so using a type selector that will select all elements with the matching type (element name).
 
 ```css
 p {
@@ -180,11 +180,11 @@ figcaption {
 }
 ```
 
-On line 6 of the code snippet above we set the color of our text using the `color` property. This property accepts color names, hexidecimal, rgb, rgba, hsl, and hsla color values. In our case we will set it to a hexidecimal value `#777` which is a shade of gray. Please refer to the previous lesson on color values for more details on all the possibilities of how to assign color in CSS. On line 8 of the code snippet above we ste the text to align to the right side of the element (flush right).
+On line 6 of the code snippet above we set the color of our text using the `color` property. This property accepts color names, hexidecimal, rgb, rgba, hsl, and hsla color values. In our case we will set it to a hexadecimal value `#777` which is a shade of gray. Please refer to the previous lesson on color values for more details on all the possibilities of how to assign color in CSS. On line 8 of the code snippet above we ste the text to align to the right side of the element (flush right).
 
 #### Web Fonts
 
-So far we have used the `font-family` property to set the font on our text asuuming the user has the font file for that particular font on their computer. One way to insure that we can use a specialized font that users may not have on their system is to load a web font. Using this strategy involves providing the font as part of the files in your website and telling the browser to load the font for use in the webpages. An easy way to include web fonts is to link to them from other websites. In this example we will use Google Fonts which provides links to access their free font library.
+So far we have used the `font-family` property to set the font on our text assuming the user has the font file for that particular font on their computer. One way to ensure that we can use a specialized font that users may not have on their system is to load a web font. Using this strategy involves providing the font as part of the files in your website and telling the browser to load the font for use in the webpages. An easy way to include web fonts is to link to them from other websites. In this example we will use Google Fonts which provides links to access their free font library.
 
 Start by heading over to [http://google.com/fonts](http://google.com/fonts) in your browser. Then, in the search bar on this page search for `Elsie`. From the returned search results under "Elsie Swash Caps" next to the Add to Collection button there are three icons. Click the center icon "quick-use".
 
@@ -265,7 +265,7 @@ Let's head to our index.html page in our code editor and create a generic box us
     ...
 ```
 
-On line 4 in the snippet above we can see we used the `id` attribute and set its value to our unique id name `logo`. Just the same as for class we can make up any name we like for an id. Again, there should only be one id of logo per page and there should be more than one id of logo on more than one element in a single page... Next,head back to style.css in your code editor.
+On line 4 in the snippet above we can see we used the `id` attribute and set its value to our unique id name `logo`. Just the same as for class we can make up any name we like for an id. Again, there should only be one id of logo per page and there should be more than one id of logo on more than one element in a single page... Next, head back to style.css in your code editor.
 
 Let's write a selector called `#logo`.
 
@@ -275,7 +275,7 @@ Let's write a selector called `#logo`.
 }
 ```
 
-Just in the same way we use a `.` dot to indicate a class an id is defined starting iwth a `#` hashtag (pound) symbol. We will set the background color of the element using the `background` property.
+Just in the same way we use a `.` dot to indicate a class an id is defined starting with a `#` hashtag (pound) symbol. We will set the background color of the element using the `background` property.
 
 ```css
 #logo {
@@ -287,7 +287,7 @@ Now save and refresh the page in the browser to see the aqua background appear o
 
 #### Descendant Selector
 
-Occasionally you might have a need to select and style only certain elements if they appear as children inside of another parent element. For example let's say we want to style the `<h1>` and `<h2>` inside of the `<div id="logo">...</div>`. To clarify we do not wish to style all `<h1>` and `<h2>` we only wish to style them if they happen to appear inside of our uniquely assigned div with an id of `logo`.
+Occasionally you might have a need to select and style only certain elements if they appear as children inside of another parent element. For example let's say we want to style the `<h1>` and `<h2>` inside of the `<div id="logo">...</div>`. To clarify, we do not wish to style all `<h1>` and `<h2>`. We only wish to style them if they happen to appear inside of our uniquely assigned div with an id of `logo`.
 
 ```css
 #logo h1 {
@@ -299,7 +299,7 @@ Occasionally you might have a need to select and style only certain elements if 
 }
 ```
 
-The ` ` space between `#logo` and `h1` or `h2` tells the browser that we are going wihtin the first selector in the statement and selecting the next selector after the space. Let's apply our google fonts to each heading.
+The ` ` space between `#logo` and `h1` or `h2` tells the browser that we are going within the first selector in the statement and selecting the next selector after the space. Let's apply our google fonts to each heading.
 
 ```css
 #logo h1 {
