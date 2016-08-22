@@ -1,0 +1,58 @@
+@import 'https://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900';
+@import 'https://fonts.googleapis.com/css?family=Clicker+Script';
+
+/* Comments */
+/* CSS Syntax */
+
+p {
+font-size: 16px;
+line-height: 1.5em;
+}
+figcaption{
+  /*font-size: 0.75em;
+  line-height: 1.5em;
+  font-family: Georgia, "New Times Roman", serif;
+  font-weight: normal;*/
+  font: normal 0.75em/1.5em "Elsie Swash Caps", cursive;
+  color: #777;
+  text-align: right;
+}
+
+/* Class selectors can be used to as many elements as I'd like */
+
+.millk-text {  /*select elements with class="millk-text"*/
+  font: bold 2.6em "Elsie Swash Caps", cursive;
+  color: white;
+  text-shadow: 0 2px 3px #000;
+}
+
+/* ID selector are applied to one unique element per page. In this case selects elements with id="logo"*/
+#logo{
+  background-color: aqua;
+}
+
+/* Descendent selector */
+#logo h1 { /* will style H1 inside #logo id #logo */
+  font-family: "Clicker Script", cursive;
+}
+
+#logo h2 { /* will style H2 inside #logo id #logo */
+  font-family: "Elsie Swash Caps", cursive;
+}
+
+/* pseudo class selectors style events and states */
+
+#details a:link, #details a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+#details a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+#details a:active {
+  color: red;
+  text-decoration: underline;
+}
