@@ -1,4 +1,7 @@
-/* comment */
+@import url(https://fonts.googleapis.com/css?family=Elsie+Swash+Caps);
+@import url(https://fonts.googleapis.com/css?family=Clicker+Script);
+
+  /* comment */
 /* CSS Syntax:
 selector {property:value;}
 */
@@ -12,7 +15,29 @@ figcaption {
   font-size: .75em;
   line-height: 1.5em;
   font-family: Georgia, "New Times Roman", serif;*/
-  font: normal 0.75em/1.5em Georgia, "New Times Roman", serif;
+  font: normal 0.75em/1.5em 'Elsie Swash Caps', cursive;
   color: #777;
   text-align: right;
 }
+/* class selector (applied to as many elements as you like) */
+
+.milk-text {/* select elements with class="milk-text" */
+  font: bold 2.6em 'Elsie Swash Caps'; cursive;
+  color: white;
+  text-shadow: 0 2px 3px #000;
+}
+/* ID selector(apply to one unique element per page) */
+
+#logo { /* select elements with id="logo" */
+background: aqua;
+
+}
+/* Descendent Selector */
+
+#logo h1{ /* selects <h1> if inside the id="logo"  */
+    font-family: 'Clicker Script', cursive;
+}
+#logo h2{
+    font-family: 'Elsie Swash Caps', cursive;
+}
+/* Psuedo Selector */
