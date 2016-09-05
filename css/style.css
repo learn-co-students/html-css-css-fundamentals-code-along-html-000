@@ -41,3 +41,15 @@ background: aqua;
     font-family: 'Elsie Swash Caps', cursive;
 }
 /* Psuedo Selector */
+
+#details a:link, #details a:visited {
+  color: black;
+  text-decoration: none;
+}
+#details a:hover{
+  color: black;
+  text-decoration: underline;
+}
+#details a:active{
+  color: red;
+}
