@@ -1,0 +1,70 @@
+
+/* This is a comment!*/
+
+/* CSS Syntax
+
+selector {
+  property:value;
+  property:value;
+  property:value; - ; tells browser the value is finished
+}
+*/
+
+/* Type Selector */
+
+p { /* select all <p> */
+  font-size: 1em; /*16px - same regardless of browser, ?pt - varies by browser, 100% - relative amount to surround elements, 1em */
+  line-height: 1.5em;
+}
+
+figcaption {
+  /* font-weight: normal;
+  font-size: .75em;
+  line-height: 1.5em;
+  font-family: Georgia, "New Times Roman", serif; */
+  font: normal, o.75em/1.5em 'Elsie Swash Caps', cursive;
+  color: #777;
+  text-align: right;
+}
+
+/* 1em - relative to size of letter "m", which varies by font - 1em usually = 16px, to calculate ems, divide number of px you want to use by 16, good for responsive design */
+
+/* Class Selector - applied to as many elements as you'd like*/
+
+.milk-text { /* sleect elements with class attribute called milk-text*/
+  font:bold 2.6em 'Elsie Swash Caps', cursive;
+  color: white;
+  text-shadow: 0 2px 3px #000;
+}
+
+/* ID selector - apply to one unique element per page*/
+
+#logo {
+  background-color: aqua;
+}
+
+/* Descendant selector - select descendant within parent element*/
+
+#logo h1 { /*will only style h1 if inside an element with the id=logo*/
+  font-family: 'Clicker Script', cursive;
+}
+
+#logo h2 {
+  font-family: 'Elsie Swash Caps', cursive;
+}
+
+/* Pseudo selector - style a relationship or state of an element*/
+
+#details a:link, #details a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+#details a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+#details a:active{
+  color: red;
+}
