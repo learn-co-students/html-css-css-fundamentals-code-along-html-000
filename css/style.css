@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+/*this is a comment yo */
+
+/*CSS syntax
+
+selcetor {
+property: value;
+proterty: value;
+}
+ */
+
+ /* type selector */
+
+ p { /*select <p> elements */
+   font-size: 1em; /* ?pt, 100%, 1em */
+   line-height: 1.5em;
+   font: 'Oswald', sans-serif;
+
+ }
+figcaption {
+  /*font-weight: normal;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  font-family: georgia, "New Times Roman", serif; */
+  font: normal 0.75em/1.5em 'Roboto Condensed', sans-serif;
+  color: grey
+}
+
+/*class selector (applied to as many elemnets as you want) */
+
+.milk-text{ /* select elements with class="milk-text"*/
+  font: bold 2.6em 'Roboto Condensed', sans-serif;
+  color: white;
+  text-shadow: 0 2px 3px #000;
+}
+ /* ID selcetor (applie to one unique elemnet per page)*/
+
+ #logo {
+   background: grey;
+   color: rgb(58, 104, 178);
+   text-shadow: 0 2px 3px #000;
+ }
+
+ #logo h1 { /*only style h1 if inside id=logo*/
+   font: normal 'Roboto Condensed', sans-serif;
+ }
+
+ #logo h2 {
+   font: normal 'Oswald', sans-serif;
+ }
+
+ #nav {
+   background: rgb(112, 142, 191);
+   color: rgb(58, 104, 178);
+   font: bold 1em 'Roboto Condensed', sans-serif;
+ }
+
+ /* psuedo selctor */
+#detials a:link, #detials a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+#detials a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+#detials a:active{
+  color: red;
+}
